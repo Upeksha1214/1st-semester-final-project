@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1066.0" stylesheets="@../accert/EmployeeForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoreUpdateItemController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Item Code ">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" prefHeight="27.0" prefWidth="125.0" text="Description">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Unit Price">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Qty On Hand">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Discount ">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <JFXButton fx:id="btnUpdateId" layoutX="929.0" layoutY="240.0" onAction="#UpdateOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Update" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="60.0" layoutY="240.0" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <TableView fx:id="tblItemUpdate" layoutX="61.0" layoutY="312.0" prefHeight="348.0" prefWidth="945.0">
+            <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="140.0" text="Item Code " />
+                <TableColumn fx:id="colDescription" prefWidth="389.0" text="Description" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="140.0" text="Unit Price" />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="140.0" text="Qty On Hand" />
+                <TableColumn fx:id="colDiscount" prefWidth="140.0" text="Discount " />
+            </columns>
+        </TableView>
+      <AnchorPane layoutX="234.0" layoutY="22.0" prefHeight="35.0" prefWidth="772.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtItemCode" layoutX="1.0" layoutY="8.0" onAction="#txtItemCodeOnAction" onKeyReleased="#item_keyRelease" prefWidth="772.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="66.0" prefHeight="35.0" prefWidth="772.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDescription" layoutX="1.0" layoutY="8.0" onKeyReleased="#item_keyRelease" prefHeight="25.0" prefWidth="772.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="106.0" onKeyReleased="#item_keyRelease" prefHeight="35.0" prefWidth="772.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtUnitPrice" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="772.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="146.0" prefHeight="35.0" prefWidth="772.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtQtyOnHand" layoutX="1.0" layoutY="8.0" onKeyPressed="#item_keyRelease" prefHeight="25.0" prefWidth="772.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="234.0" layoutY="186.0" prefHeight="35.0" prefWidth="772.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDiscount" layoutX="1.0" layoutY="8.0" onKeyPressed="#item_keyRelease" prefHeight="25.0" prefWidth="772.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>

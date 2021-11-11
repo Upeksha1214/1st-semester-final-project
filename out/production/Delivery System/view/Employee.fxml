@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="employeeHomeContext" prefHeight="727.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeController">
+    <children>
+        <Pane prefHeight="746.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+         <children>
+            <VBox layoutY="6.0" prefHeight="739.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/employe.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Pane fx:id="homePane" onMouseClicked="#homeOnMouseAction" onMouseEntered="#homeOnMouseEntered" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <children>
+                            <ImageView fitHeight="56.0" fitWidth="59.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../accert/homeImage.png" />
+                                </image>
+                            </ImageView>
+                        <Label layoutX="136.0" layoutY="28.0" prefHeight="18.0" prefWidth="56.0" text="Home" textFill="WHITE">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Label>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="addPane" onMouseClicked="#addOnMouseAction" onMouseEntered="#addMouseEnterdOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <opaqueInsets>
+                        <Insets bottom="12.0" />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <children>
+                        <Label layoutX="121.0" layoutY="28.0" prefHeight="18.0" prefWidth="108.0" text="Add Employee" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font></Label>
+                        <ImageView fitHeight="56.0" fitWidth="59.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/addEmployee.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="searchPane" onMouseClicked="#searchMouseOnAction" onMouseEntered="#searchMouseEnter" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <Label layoutX="121.0" layoutY="28.0" prefHeight="18.0" prefWidth="126.0" text="Search Employee" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/search.png" />
+                           </image></ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="updatePane" layoutX="10.0" layoutY="180.0" onMouseClicked="#updateOnAction" onMouseEntered="#updateMouseEnterOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <Label layoutX="116.0" layoutY="28.0" prefHeight="18.0" prefWidth="126.0" text="Update Employee" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Label>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/updatePeople.png" />
+                           </image></ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="deletePane" layoutX="10.0" layoutY="253.0" onMouseClicked="#deleteOnAction" onMouseEntered="#deleteMouseEnterOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <Label fx:id="DeletePane" layoutX="116.0" layoutY="28.0" prefHeight="18.0" prefWidth="126.0" text="Delete Employee" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/deletpeople.png" />
+                           </image></ImageView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+        </Pane>
+        <AnchorPane fx:id="employeeContext" layoutX="300.0" layoutY="70.0" prefHeight="676.0" prefWidth="1066.0" />
+      <Pane layoutX="300.0" prefHeight="70.0" prefWidth="1066.0" style="-fx-background-color: #2b65ec;">
+         <children>
+            <Label fx:id="lblTime" layoutX="903.0" layoutY="14.0" text="9:00:00" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="903.0" layoutY="39.0" text="03/09/2021" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+    </children>
+
+</AnchorPane>

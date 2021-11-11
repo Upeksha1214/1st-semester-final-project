@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ShopSearchController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Shop Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" text="Shop Name">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Shop Address">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Shop Phone Number">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <JFXButton layoutX="70.0" layoutY="228.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="932.0" layoutY="228.0" onAction="#txtShopOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblShopSearch" layoutX="55.0" layoutY="300.0" prefHeight="300.0" prefWidth="960.0">
+            <columns>
+                <TableColumn fx:id="colShopId" prefWidth="140.0" text="Shop Id" />
+                <TableColumn fx:id="colShopName" prefWidth="380.0" text="Shop Name" />
+                <TableColumn fx:id="colPhoneNumber" prefWidth="140.0" text="Shop Phone Number" />
+                <TableColumn fx:id="colAddress" prefWidth="300.0" text="Shop Address" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtShopId" layoutX="296.0" layoutY="26.0" onAction="#txtShopOnAction" prefHeight="25.0" prefWidth="727.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="txtShopName" editable="false" layoutX="296.0" layoutY="66.0" prefHeight="25.0" prefWidth="727.0" />
+        <TextField fx:id="txtPhoneNumber" editable="false" layoutX="296.0" layoutY="106.0" prefHeight="25.0" prefWidth="727.0" />
+        <TextField fx:id="txtShopAddress" editable="false" layoutX="296.0" layoutY="147.0" prefHeight="25.0" prefWidth="727.0" />
+    </children>
+
+</AnchorPane>

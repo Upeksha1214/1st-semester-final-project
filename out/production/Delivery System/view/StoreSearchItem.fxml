@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoreSearchItemController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Item Code ">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" prefHeight="27.0" prefWidth="125.0" text="Description">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Unit Price">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Qty On Hand">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Discount ">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtQtyOnHand" layoutX="234.0" layoutY="146.0" prefHeight="25.0" prefWidth="772.0" />
+        <TextField fx:id="txtUnitPrice" editable="false" layoutX="234.0" layoutY="106.0" prefHeight="25.0" prefWidth="772.0" />
+        <TextField fx:id="txtDescription" editable="false" layoutX="234.0" layoutY="66.0" prefHeight="25.0" prefWidth="772.0" />
+        <TextField fx:id="txtItemCode" layoutX="234.0" layoutY="26.0" onAction="#txtItemCodeOnAction" prefWidth="772.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="txtDiscount" editable="false" layoutX="234.0" layoutY="186.0" prefHeight="25.0" prefWidth="772.0" />
+        <JFXButton layoutX="911.0" layoutY="240.0" onAction="#txtItemCodeOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="60.0" layoutY="240.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <TableView fx:id="tblSearchItemController" layoutX="61.0" layoutY="312.0" prefHeight="348.0" prefWidth="945.0">
+            <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="140.0" text="Item Code " />
+                <TableColumn fx:id="colItemDescription" prefWidth="389.0" text="Description" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="140.0" text="Unit Price" />
+                <TableColumn fx:id="colQtyOnHand" prefWidth="140.0" text="Qty On Hand" />
+                <TableColumn fx:id="colDiscount" prefWidth="140.0" text="Discount " />
+            </columns>
+        </TableView>
+    </children>
+
+</AnchorPane>

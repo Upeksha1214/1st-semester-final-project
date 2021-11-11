@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="orderContext" prefHeight="727.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OderController">
+   <children>
+      <Pane prefHeight="727.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+         <children>
+            <VBox prefHeight="727.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="143.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/Order.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Pane fx:id="homePane" onMouseClicked="#honeMouseClickOnAction" onMouseEntered="#homeEnterdMouseOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/homeImage.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="28.0" text="Home" textFill="#f8f7f7">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="addPane" onMouseClicked="#oderAddMouseCliclkOnAction" onMouseEntered="#oderAddMouseEnterdOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/newItem.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="28.0" text="Order Add" textFill="#f8f7f7">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets top="30.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="searchPane" onMouseClicked="#oderSearchMouseClickOnAction" onMouseEntered="#oderSearchEnteredMouseOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/searchItem.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="28.0" text="Order Search" textFill="#f8f7f7">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="updatePane" onMouseClicked="#oderUpdateMouseClickOnAction" onMouseEntered="#oderUpdateEnterdMouseonAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec #2b65ec;">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/updateItem.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="28.0" text="Order Update" textFill="#f8f7f7">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+                  <Pane fx:id="DeletePane" onMouseClicked="#oderDeleteMouseClickOnAction" onMouseEntered="#oderDeleteMouseEntereddOnAction" prefHeight="73.0" prefWidth="300.0" style="-fx-background-color: #2b65ec;">
+                     <children>
+                        <ImageView fitHeight="59.0" fitWidth="56.0" layoutX="37.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../accert/deletpeople.png" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="150.0" layoutY="28.0" text="Order Delete" textFill="#f8f7f7">
+                           <font>
+                              <Font name="Iskoola Pota Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Pane>
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="orderControllerContext" layoutX="300.0" layoutY="70.0" prefHeight="657.0" prefWidth="1066.0" />
+      <Pane layoutX="300.0" prefHeight="70.0" prefWidth="1066.0" style="-fx-background-color: #2b65ec;">
+         <children>
+            <Label fx:id="lblTime" layoutX="903.0" layoutY="14.0" text="9:00:00" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="903.0" layoutY="39.0" text="03/09/2021" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

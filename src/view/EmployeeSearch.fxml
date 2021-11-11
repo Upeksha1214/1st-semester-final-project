@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeSearchController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Employee Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" text="Employee Type">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Employee NIC">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Employee Name">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Employee Address">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="226.0" text="Employee Phone Number">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="266.0" text="Employee Salary">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblEmployeeSearch" layoutX="60.0" layoutY="357.0" prefHeight="250.0" prefWidth="957.0">
+            <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="75.0" text="Employee Id" />
+                <TableColumn fx:id="colEmployeeType" prefWidth="98.0" text="Employee Type" />
+                <TableColumn fx:id="colEmployeeNic" prefWidth="99.0" text="Employee NIC" />
+                <TableColumn fx:id="colEmployeeName" prefWidth="333.0" text="Employee Name" />
+                <TableColumn fx:id="colEmployeeAddress" prefWidth="154.0" text="Employee Address" />
+                <TableColumn fx:id="colEmPhoneNumber" prefWidth="98.0" text="Phone Number" />
+                <TableColumn fx:id="colEmployeeSalary" prefWidth="99.0" text="Employee Salary" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtEmployeePhoneNumber" editable="false" layoutX="342.0" layoutY="227.0" prefHeight="25.0" prefWidth="664.0" />
+        <TextField fx:id="txtEmployeeId" layoutX="342.0" layoutY="26.0" onAction="#btnSearchONAction" prefHeight="25.0" prefWidth="664.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TextField fx:id="txtEmployeeType" editable="false" layoutX="342.0" layoutY="66.0" prefHeight="25.0" prefWidth="664.0" />
+        <TextField fx:id="txtEmployeeNIC" editable="false" layoutX="342.0" layoutY="106.0" prefHeight="25.0" prefWidth="664.0" />
+        <TextField fx:id="txtEmployeeName" editable="false" layoutX="342.0" layoutY="146.0" prefHeight="25.0" prefWidth="664.0" />
+        <TextField fx:id="txtEmployeeAdders" editable="false" layoutX="342.0" layoutY="186.0" prefHeight="25.0" prefWidth="664.0" />
+        <TextField fx:id="txtEmployeeSalary" editable="false" layoutX="342.0" layoutY="266.0" prefHeight="25.0" prefWidth="664.0" />
+        <JFXButton layoutX="920.0" layoutY="313.0" onAction="#btnSearchONAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="60.0" layoutY="313.0" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #F75D59; -fx-background-radius: 10;" text="Cancel" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+    </children>
+
+</AnchorPane>

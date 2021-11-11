@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="storeKeeperOnAction" prefHeight="727.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StoreKeeperController">
+   <children>
+      <Pane layoutX="369.0" prefHeight="109.0" prefWidth="998.0" style="-fx-background-color: #2B65EC;">
+         <children>
+            <Label fx:id="lblTime" layoutX="744.0" layoutY="14.0" prefHeight="50.0" prefWidth="201.0" text=" 9:00:00" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="30.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="744.0" layoutY="55.0" prefHeight="50.0" prefWidth="208.0" text="  03/09/2021" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold Italic" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox prefHeight="727.0" prefWidth="369.0" style="-fx-background-color: #2B65EC;">
+         <children>
+            <Label text="Store Keeper Manage" textFill="#e5e4e2">
+               <font>
+                  <Font name="Iskoola Pota" size="30.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="60.0" top="50.0" />
+               </VBox.margin>
+            </Label>
+            <JFXButton onAction="#driverOnAction" prefHeight="70.0" prefWidth="235.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 20;" text="       Driver Manage" textFill="#e5e4e2">
+               <font>
+                  <Font name="Iskoola Pota Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView disable="true" fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/driver3.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <VBox.margin>
+                  <Insets left="47.0" top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#vehicleOnAction" prefHeight="70.0" prefWidth="242.0" style="-fx-background-color: #2B65EC; -fx-background-radius: 20;" text="       Vehicle Manage" textFill="#e5e4e2">
+               <VBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Iskoola Pota Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/vehicle.png" />
+                     </image></ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#refOnAction" prefHeight="70.0" prefWidth="235.0" style="-fx-background-color: #2B65EC; -fx-background-radius: 20;" text="       Ref Manage" textFill="#e5e4e2">
+               <font>
+                  <Font name="Iskoola Pota Bold" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="42.0" top="30.0" />
+               </VBox.margin>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/Manager.png" />
+                     </image></ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#shopOnAction" prefHeight="70.0" prefWidth="235.0" style="-fx-background-color: #2B65EC; -fx-background-radius: 20;" text="       Shop Manage" textFill="#e5e4e2">
+               <VBox.margin>
+                  <Insets left="47.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Iskoola Pota Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/Shop.png" />
+                     </image></ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#oderDetailsOnAction" prefHeight="70.0" prefWidth="303.0" style="-fx-background-color: #2B65EC; -fx-background-radius: 20;" text="       Order Details Manage" textFill="#e5e4e2">
+               <VBox.margin>
+                  <Insets left="50.0" top="30.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Iskoola Pota Bold" size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../accert/Order.png" />
+                     </image></ImageView>
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton onAction="#logOutOnAction" style="-fx-background-color: #E5E4E2;" text="Logout ">
+               <VBox.margin>
+                  <Insets left="250.0" top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Iskoola Pota Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </VBox>
+      <ImageView fitHeight="618.0" fitWidth="998.0" layoutX="369.0" layoutY="109.0" pickOnBounds="true">
+         <image>
+            <Image url="@../accert/BackGround.jpeg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="496.0" layoutY="169.0" prefHeight="287.0" prefWidth="354.0" style="-fx-background-radius: 30;">
+         <children>
+            <JFXTextArea fx:id="txtNotePad" opacity="0.48" prefHeight="378.0" prefWidth="389.0" promptText="     Notepad" style="-fx-background-color: #7DFDFE; -fx-border-radius: 30; -fx-border-color: #000080; -fx-background-radius: 30;">
+               <font>
+                  <Font name="Iskoola Pota Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></JFXTextArea>
+         </children>
+      </AnchorPane>
+      <JFXButton layoutX="496.0" layoutY="575.0" onAction="#openFileOnAction" prefHeight="36.0" prefWidth="83.0" style="-fx-background-color: #3EB489; -fx-background-radius: 10;" text="Open" textFill="#c2dfff">
+         <font>
+            <Font name="Iskoola Pota Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="806.0" layoutY="575.0" onAction="#SaveOnAction" prefHeight="36.0" prefWidth="83.0" style="-fx-background-color: #0000A5; -fx-background-radius: 10;" text="Save" textFill="#c2dfff">
+         <font>
+            <Font name="Iskoola Pota Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+   </children>
+</AnchorPane>

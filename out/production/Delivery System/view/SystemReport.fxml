@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="systemReprotContext" prefHeight="721.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SystemReportController">
+   <children>
+      <JFXButton layoutX="433.0" layoutY="139.0" onMouseClicked="#generateOrderReport" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #2b65ec;" text="Order Details" textFill="#f8f7f7">
+         <font>
+            <Font name="Iskoola Pota Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton layoutX="433.0" layoutY="237.0" onMouseClicked="#generateSalaryReport" prefHeight="50.0" prefWidth="500.0" style="-fx-background-color: #2b65ec;" text="Salaray Report" textFill="#f8f7f7">
+         <font>
+            <Font name="Iskoola Pota Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <Pane prefHeight="83.0" prefWidth="1366.0" style="-fx-background-color: #2b65ec;">
+         <children>
+            <Label fx:id="lblTime" layoutX="1208.0" layoutY="14.0" prefHeight="25.0" prefWidth="106.0" text="9:00:00" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="1208.0" layoutY="43.0" text="03/09/2021" textFill="#c2dfff">
+               <font>
+                  <Font name="Comic Sans MS Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="583.0" layoutY="21.0" text="System Report" textFill="#c2dfff">
+               <font>
+                  <Font name="Iskoola Pota Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="83.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../accert/reprot.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="1231.0" layoutY="622.0" onAction="#backToHomeAction" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Back" textFill="#f8f7f7">
+         <font>
+            <Font name="Iskoola Pota Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

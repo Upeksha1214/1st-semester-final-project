@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" stylesheets="@../accert/EmployeeForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EmployeeUpdateController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Employee Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" text="Employee Type">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Employee NIC">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Employee Name">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Employee Address">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="226.0" text="Employee Phone Number">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="266.0" text="Employee Salary">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblEmployeeUpdate" layoutX="60.0" layoutY="357.0" prefHeight="250.0" prefWidth="957.0">
+            <columns>
+                <TableColumn fx:id="colEmployeeId" prefWidth="75.0" text="Employee Id" />
+                <TableColumn fx:id="colEmployeeType" prefWidth="98.0" text="Employee Type" />
+                <TableColumn fx:id="colEmployeeNIC" prefWidth="99.0" text="Employee NIC" />
+                <TableColumn fx:id="colEmployeeName" prefWidth="333.0" text="Employee Name" />
+                <TableColumn fx:id="colEmployeeAddress" prefWidth="154.0" text="Employee Address" />
+                <TableColumn fx:id="colPhoneNumber" prefWidth="98.0" text="Phone Number" />
+                <TableColumn fx:id="colEmployeeSalary" prefWidth="99.0" text="Employee Salary" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnUpdateId" layoutX="920.0" layoutY="313.0" onAction="#btnUpdate" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Update" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="60.0" layoutY="313.0" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #F75D59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+      <AnchorPane layoutX="342.0" layoutY="22.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeId" layoutX="1.0" layoutY="8.0" onAction="#txtGetEmployeeSearchOnAction" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="62.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeType" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="102.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeNIC" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="142.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeName" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="182.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeAddress" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="222.0" onKeyReleased="#employ_keyRelese" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmPhoneNumber" layoutX="1.0" layoutY="8.0" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="262.0" prefHeight="35.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtEmployeeSalary" layoutX="1.0" layoutY="8.0" onKeyPressed="#employ_keyRelese" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>

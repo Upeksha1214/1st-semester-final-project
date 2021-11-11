@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SalarySearchController">
+    <children>
+        <Label layoutX="60.0" layoutY="66.0" text="Employee Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Employee Salary">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblSalaryAdd" layoutX="55.0" layoutY="349.0" prefHeight="276.0" prefWidth="957.0">
+            <columns>
+                <TableColumn fx:id="colSalaryId" prefWidth="158.0" text="SalaryID" />
+                <TableColumn fx:id="colEmployeeId" prefWidth="158.0" text="Employee Id" />
+                <TableColumn fx:id="colEmployeeSalary" prefWidth="158.0" text="Employee Salary" />
+                <TableColumn fx:id="colIncentive" minWidth="5.0" prefWidth="158.0" text="Incentive" />
+                <TableColumn fx:id="colOt" minWidth="0.0" prefWidth="158.0" text="Ot" />
+                <TableColumn fx:id="colTotal" minWidth="0.0" prefWidth="166.0" text="Total" />
+            </columns>
+        </TableView>
+        <TextField fx:id="txtEmployeeSalary" editable="false" layoutX="296.0" layoutY="106.0" prefHeight="25.0" prefWidth="710.0" />
+        <JFXButton layoutX="920.0" layoutY="291.0" onAction="#btnSearchTable" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="66.0" layoutY="291.0" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancel" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <Label layoutX="63.0" layoutY="146.0" text="Incentive">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtIncentive" editable="false" layoutX="296.0" layoutY="146.0" prefHeight="25.0" prefWidth="710.0" />
+        <Label layoutX="63.0" layoutY="182.0" text="Ot">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="63.0" layoutY="222.0" text="Total">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtOt" editable="false" layoutX="296.0" layoutY="182.0" prefHeight="25.0" prefWidth="710.0" />
+        <TextField fx:id="txtTotal" editable="false" layoutX="302.0" layoutY="223.0" prefHeight="25.0" prefWidth="710.0" />
+        <Label layoutX="60.0" layoutY="26.0" text="Salary Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtSalaryId" layoutX="296.0" layoutY="27.0" onAction="#btnSearchTable" prefHeight="25.0" prefWidth="710.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+      <TextField fx:id="txtEmployeeId" editable="false" layoutX="296.0" layoutY="67.0" prefHeight="25.0" prefWidth="710.0" />
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="727.0" prefWidth="1066.0" stylesheets="@../accert/EmployeeForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DriverUpdateController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Driver Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" text="Driver NIC">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Driver Name">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Driver Address">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="65.0" layoutY="186.0" text="Driver Phone Number">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tblDriverUpdate" layoutX="55.0" layoutY="300.0" prefHeight="289.0" prefWidth="957.0">
+            <columns>
+                <TableColumn fx:id="colDriverId" prefWidth="140.0" text="Driver Id" />
+                <TableColumn fx:id="colDriverNic" prefWidth="140.0" text="Driver NIC" />
+                <TableColumn fx:id="colDriverName" prefWidth="311.0" text="Driver Name" />
+                <TableColumn fx:id="colDriverAddress" prefWidth="225.0" text="Driver Address" />
+                <TableColumn fx:id="colPhoneNumber" prefWidth="140.0" text="Driver Phone Number" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btnUpdateId" layoutX="920.0" layoutY="247.0" onAction="#updateOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Update" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="60.0" layoutY="247.0" onAction="#cancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+      <AnchorPane layoutX="342.0" layoutY="22.0" prefHeight="30.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDriverId" layoutX="1.0" layoutY="8.0" onAction="#txtDriverIdOnAction" onKeyReleased="#employ_keyRelease" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="62.0" prefHeight="30.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDriverNic" layoutX="1.0" layoutY="8.0" onKeyReleased="#employ_keyRelease" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="102.0" prefHeight="30.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDriverName" layoutX="1.0" layoutY="8.0" onKeyReleased="#employ_keyRelease" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="142.0" prefHeight="30.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtDriverAddress" layoutX="1.0" layoutY="8.0" onKeyReleased="#employ_keyRelease" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="342.0" layoutY="182.0" prefHeight="30.0" prefWidth="664.0" styleClass="textPane">
+         <children>
+              <TextField fx:id="txtPhoneNumber" layoutX="1.0" layoutY="8.0" onKeyReleased="#employ_keyRelease" prefHeight="25.0" prefWidth="664.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+    </children>
+
+</AnchorPane>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RefSearchController">
+    <children>
+        <Label layoutX="60.0" layoutY="26.0" text="Ref Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="66.0" text="Ref NIC">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Ref Name">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Ref Address">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Ref Phone Number">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtPhoneNumber" editable="false" layoutX="281.0" layoutY="187.0" prefHeight="25.0" prefWidth="716.0" />
+        <TextField fx:id="txtRefAddress" editable="false" layoutX="281.0" layoutY="147.0" prefHeight="25.0" prefWidth="716.0" />
+        <TextField fx:id="txtRefName" editable="false" layoutX="281.0" layoutY="107.0" prefHeight="25.0" prefWidth="716.0" />
+        <TextField fx:id="txtRefNic" editable="false" layoutX="281.0" layoutY="67.0" prefHeight="25.0" prefWidth="716.0" />
+        <TextField fx:id="txtRefId" layoutX="281.0" layoutY="27.0" onAction="#txtSearchRefOnAction" prefHeight="25.0" prefWidth="716.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor></TextField>
+        <TableView fx:id="tblRefSearch" layoutX="47.0" layoutY="311.0" prefHeight="300.0" prefWidth="947.0">
+            <columns>
+                <TableColumn fx:id="colRefId" prefWidth="140.0" text="Ref Id" />
+                <TableColumn fx:id="colRefNic" prefWidth="140.0" text="Ref NIC" />
+                <TableColumn fx:id="colRefName" prefWidth="314.0" text="Ref Name" />
+                <TableColumn fx:id="colRefAddress" minWidth="4.0" prefWidth="226.0" text="Ref Address" />
+                <TableColumn fx:id="colPhoneNumber" prefWidth="140.0" text="Phone Number" />
+            </columns>
+        </TableView>
+        <JFXButton layoutX="70.0" layoutY="250.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancle" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+        <JFXButton layoutX="911.0" layoutY="250.0" onAction="#txtSearchRefOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="Iskoola Pota Bold" size="12.0" />
+            </font>
+        </JFXButton>
+    </children>
+
+</AnchorPane>

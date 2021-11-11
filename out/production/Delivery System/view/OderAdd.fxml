@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" stylesheets="@../accert/EmployeeForm.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OderAddController">
+   <children>
+      <Label layoutX="60.0" layoutY="66.0" text="Ref Id">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="106.0" text="Shop Id">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="146.0" text="Item Code ">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="186.0" text="Unit Price">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="226.0" text="QTY On Hand">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnAddId" layoutX="913.0" layoutY="366.0" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Add" textFill="#e5e4e2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton layoutX="59.0" layoutY="366.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancel" textFill="#e5e4e2">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblOrderAdd" layoutX="47.0" layoutY="412.0" prefHeight="211.0" prefWidth="942.0">
+        <columns>
+            <TableColumn fx:id="colOderId" prefWidth="118.0" text="Order Id" />
+          <TableColumn fx:id="colRefId" minWidth="0.0" prefWidth="118.0" text="Ref Id" />
+          <TableColumn fx:id="colShopId" minWidth="0.0" prefWidth="118.0" text="Shop Id" />
+            <TableColumn fx:id="colItemCode" prefWidth="118.0" text="ItemCode" />
+            <TableColumn fx:id="colUnitPrice" prefWidth="118.0" text="Unit Price" />
+            <TableColumn fx:id="colQTY" prefWidth="118.0" text="QTY On Hand" />
+            <TableColumn fx:id="colOderQTY" prefWidth="118.0" text="Order QTY" />
+            <TableColumn fx:id="colTotal" prefWidth="118.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="63.0" layoutY="28.0" text="Order Id">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="304.0" text="Total">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="60.0" layoutY="266.0" text="QTY">
+         <font>
+            <Font name="Iskoola Pota Bold" size="22.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="276.0" layoutY="25.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtOderId" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="276.0" layoutY="65.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <ComboBox fx:id="cmbRefId" editable="true" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="275.0" layoutY="105.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <ComboBox fx:id="cmbShopId" editable="true" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="276.0" layoutY="145.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <ComboBox fx:id="cmbItemCode" editable="true" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ComboBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="276.0" layoutY="185.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtUnitPrice" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="275.0" layoutY="225.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtQTY" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="276.0" layoutY="265.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtOderQTY" layoutX="1.0" layoutY="8.0" onKeyPressed="#txtOrderQtyOnAction" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="276.0" layoutY="305.0" prefHeight="30.0" prefWidth="753.0" styleClass="textPane">
+         <children>
+            <TextField fx:id="txtTotal" layoutX="1.0" layoutY="8.0" onKeyReleased="#order_keyRelease" prefHeight="25.0" prefWidth="723.0" styleClass="textField">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor></TextField>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

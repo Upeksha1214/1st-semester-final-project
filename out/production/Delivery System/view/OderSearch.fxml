@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="657.0" prefWidth="1066.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OderSearchController">
+    <children>
+        <Label layoutX="60.0" layoutY="66.0" text="Ref Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="106.0" text="Shop Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="146.0" text="Item Code ">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="186.0" text="Unit Price">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <Label layoutX="60.0" layoutY="226.0" text="QTY On Hand">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtUnitPrice" editable="false" layoutX="276.0" layoutY="186.0" prefHeight="25.0" prefWidth="723.0" />
+        <TextField fx:id="txtQTY" editable="false" layoutX="276.0" layoutY="227.0" prefHeight="25.0" prefWidth="723.0" />
+        <JFXButton layoutX="913.0" layoutY="366.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #2b65ec; -fx-background-radius: 10;" text="Search" textFill="#e5e4e2">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <JFXButton layoutX="59.0" layoutY="366.0" onAction="#btnCancelOnAction" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #f75d59; -fx-background-radius: 10;" text="Cancel" textFill="#e5e4e2">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+        </JFXButton>
+        <TableView fx:id="tblOrderAdd" layoutX="47.0" layoutY="412.0" prefHeight="211.0" prefWidth="942.0">
+            <columns>
+                <TableColumn fx:id="colOderId" prefWidth="118.0" text="Order Id" />
+                <TableColumn fx:id="colRefId" minWidth="0.0" prefWidth="118.0" text="Ref Id" />
+                <TableColumn fx:id="colShopId" minWidth="0.0" prefWidth="118.0" text="Shop Id" />
+                <TableColumn fx:id="colItemCode" prefWidth="118.0" text="ItemCode" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="118.0" text="Unit Price" />
+                <TableColumn fx:id="colQTY" prefWidth="118.0" text="QTY On Hand" />
+                <TableColumn fx:id="colOderQTY" prefWidth="118.0" text="Order QTY" />
+                <TableColumn fx:id="colTotal" prefWidth="118.0" text="Total" />
+            </columns>
+        </TableView>
+        <Label layoutX="63.0" layoutY="28.0" text="Order Id">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtOderId" layoutX="276.0" layoutY="29.0" onAction="#btnSearchOnAction" prefHeight="25.0" prefWidth="723.0" />
+        <Label layoutX="60.0" layoutY="304.0" text="Total">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtTotal" editable="false" layoutX="276.0" layoutY="304.0" prefHeight="25.0" prefWidth="723.0" />
+        <Label layoutX="60.0" layoutY="266.0" text="QTY">
+            <font>
+                <Font name="Iskoola Pota Bold" size="22.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtOderQTY" editable="false" layoutX="276.0" layoutY="266.0" prefHeight="25.0" prefWidth="723.0" />
+      <TextField fx:id="txtRefId" editable="false" layoutX="276.0" layoutY="67.0" prefHeight="25.0" prefWidth="723.0" />
+      <TextField fx:id="txtShopId" editable="false" layoutX="276.0" layoutY="107.0" prefHeight="25.0" prefWidth="723.0" />
+      <TextField fx:id="txtItemCode" editable="false" layoutX="276.0" layoutY="147.0" prefHeight="25.0" prefWidth="723.0" />
+    </children>
+
+</AnchorPane>
